@@ -19,29 +19,92 @@ To write a program to perform linear search and binary search using python progr
 ## Program:
 i)	#Use a linear search method to match the item in a list.
 ```
+Developed by:Kamalesh.R
+Register number:212223230094
 
-
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
 ii)	# Find the element in a list using Binary Search(Iterative Method).
 ```
+Developed by:Kamalesh.R
+Register number:212223230094
 
-
-
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 
 ```
 iii)	# Find the element in a list using Binary Search (recursive Method).
 ```
+Developed by:Kamalesh.R
+Register number:212223230094
 
-
-
-
-
+def binarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid]==k:
+            return mid
+        elif array[mid]<k:
+            low=mid+1
+        else:
+            high=mid-1
+    return -1
+array = eval(input())
+array.sort()
+k = eval(input()) 
+print(array)
+res=binarySearchIter(array,k,0,len(array)-1)
+if res==-1:
+    print("Element not found")
+else:
+    print("Element found at index: ",res)
 ```
-## Sample Input and Output
+## Output
+(i) # Use a linear search method to match the item in a list.
 
+![Screenshot 2024-04-06 103511](https://github.com/KAMALESHNITHYA/Search-Algorithms/assets/145743119/083273cc-81d3-4e67-8a01-686ffe689fcf)
 
+(ii) #Find the element in a list using Binary Search(Iterative Method).
+
+![Screenshot 2024-04-06 103527](https://github.com/KAMALESHNITHYA/Search-Algorithms/assets/145743119/29f5e5b5-08db-44a3-992d-e44be688de0e)
+
+(iii) # Find the element in a list using Binary Search (recursive Method)
+
+![Screenshot 2024-04-06 103537](https://github.com/KAMALESHNITHYA/Search-Algorithms/assets/145743119/52a10211-816d-47e8-b34c-9f214b3276e7)
 
 
 
